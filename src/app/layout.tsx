@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Analytics />
+        {process.env.NODE_ENV === "production" && <Analytics />}
         {children}
       </body>
     </html>

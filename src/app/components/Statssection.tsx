@@ -67,20 +67,20 @@ function Statssection() {
       {/* Stats Grid */}
       <div
         ref={statsRef}
-        className={`grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 transition-all duration-700 ease-out ${isStatsVisible
+        className={`grid grid-cols-1 mx-4 place-content-center sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 transition-all duration-700 ease-out ${isStatsVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-8"
           }`}
       >
         {[
-          { label: "Students Trained", value: "1500+", color: "1D6D8D" },
-          { label: "Core Team", value: "45+", color: "FF6F61" },
-          { label: "Productions", value: "5+", color: "1D6D8D" },
-          { label: "Countries", value: "13+", color: "FF6F61" },
+          { label: "Students Trained", value: "1500+", color: "#1D6D8D" },
+          { label: "Core Team", value: "45+", color: "#FF6F61" },
+          { label: "Productions", value: "5+", color: "#1D6D8D" },
+          { label: "Countries", value: "13+", color: "#FF6F61" },
         ].map((stat, index) => (
           <div
             key={index}
-            className="text-left border border-gray-200 rounded-xl h-fit space-y-4 sm:space-y-5 py-6 sm:py-7 md:py-8 px-5 sm:px-6 flex flex-col bg-[#F4F5FF] shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+            className="text-left border border-gray-200 rounded-xl h-fit space-y-4 sm:space-y-5 py-6 sm:py-7 md:py-8 px-6 sm:px-6 flex flex-col bg-[#F4F5FF] shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             style={{
               transitionDelay: isStatsVisible ? `${index * 100}ms` : "0ms",
             }}

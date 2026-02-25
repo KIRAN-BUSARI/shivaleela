@@ -59,7 +59,7 @@ const About = () => {
   return (
     <div
       id="about-us"
-      className="mx-auto flex flex-col max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12 py-16 sm:py-20 md:py-24 lg:py-32"
+      className="mx-auto flex flex-col max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12 sm:py-20 md:py-24 lg:py-32"
     >
       {/* Header Section */}
       <div
@@ -69,8 +69,8 @@ const About = () => {
           : "opacity-0 translate-y-8"
           }`}
       >
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center md:text-left font-bold mb-4 sm:mb-5 md:mb-6 text-gray-900 leading-tight">
-          Shivaleela Cultural Trust That Speaks!
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:text-left font-bold mb-4 sm:mb-5 md:mb-6 text-gray-900 leading-tight">
+          Shivaleela Cultural <br />Trust That Speaks!
         </h1>
         <p className="text-base sm:text-lg md:text-lg text-gray-700 leading-relaxed max-w-full">
           Shivaleela Cultural Trust, Bengaluru&apos;s premier dance troupe, delivers 12+ years of performance excellence on national and international stages. Unique concepts, original music, and innovative choreography in classical (Bharatanatyam, Kathak) and folk forms convey profound messages. Meet our founder, board, and professional artists.
@@ -85,15 +85,15 @@ const About = () => {
           : "opacity-0 -translate-x-8"
           }`}
       >
-        <div className="w-full sm:w-auto lg:w-auto flex justify-center lg:justify-start">
-          <div className="relative group">
+        <div className="w-full sm:w-auto lg:w-auto justify-start lg:justify-start flex">
+          <div className="relative group ">
             <Image
               src={Shantala}
               alt="Guru Shantala"
               priority
               width={320}
               height={320}
-              className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-br-[60px] sm:rounded-br-[70px] md:rounded-br-[80px] rounded-tl-[60px] sm:rounded-tl-[70px] md:rounded-tl-[80px] rounded-2xl object-cover shadow-lg transition-transform duration-500 ease-out group-hover:scale-105 group-hover:shadow-2xl"
+              className="w-77 h-77 mx-auto sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-lg object-cover shadow-lg transition-transform duration-500 ease-out group-hover:scale-105 group-hover:shadow-2xl"
             />
           </div>
         </div>
@@ -108,7 +108,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="text-gray-700 space-y-4 sm:space-y-5 md:space-y-6 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
+          <div className="text-gray-700 text-left space-y-4 sm:space-y-5 md:space-y-6 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
             <p>
               Shivaleela Cultural Trust&apos;s 12+ years of excellence in innovative
               classical and folk productions like{" "}
@@ -140,7 +140,7 @@ const About = () => {
           : "opacity-0 translate-x-8"
           }`}
       >
-        <div className="w-full sm:w-auto lg:w-auto flex justify-center lg:justify-start">
+        <div className="w-full sm:w-auto lg:w-auto flex justify-start">
           <div className="relative group">
             <Image
               src={Parimila}
@@ -148,7 +148,7 @@ const About = () => {
               priority
               width={320}
               height={320}
-              className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-bl-[60px] sm:rounded-bl-[70px] md:rounded-bl-[80px] rounded-tr-[60px] sm:rounded-tr-[70px] md:rounded-tr-[80px] rounded-2xl object-cover shadow-lg transition-transform duration-500 ease-out group-hover:scale-105 group-hover:shadow-2xl"
+              className="w-77 h-77 mx-auto sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-lg object-cover shadow-lg transition-transform duration-500 ease-out group-hover:scale-105 group-hover:shadow-2xl"
             />
           </div>
         </div>

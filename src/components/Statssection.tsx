@@ -52,7 +52,7 @@ function Statssection() {
   }, []);
 
   return (
-    <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12 py-16 sm:py-20 md:py-24 lg:py-32 flex flex-col space-y-12">
+    <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-20 md:py-24 lg:py-32 flex flex-col space-y-12">
       {/* Header */}
       <div
         ref={headerRef}
@@ -67,7 +67,7 @@ function Statssection() {
       {/* Stats Grid */}
       <div
         ref={statsRef}
-        className={`grid grid-cols-1 mx-4 place-content-center sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 transition-all duration-700 ease-out ${isStatsVisible
+        className={`grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 transition-all duration-700 ease-out ${isStatsVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-8"
           }`}
@@ -119,18 +119,13 @@ function Statssection() {
       {/* Video Section */}
       <div
         ref={videoRef}
-        className={`transition-all duration-700 ease-out ${isVideoVisible
+        className={`transition-all h-auto duration-700 ease-out ${isVideoVisible
           ? "opacity-100 scale-100"
           : "opacity-0 scale-95"
           }`}
       >
-        <div className="relative overflow-hidden rounded-xl sm:rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 group">
-          <Image
-            src={YtThumbnail}
-            alt="YT Thumbnail"
-            className="w-full h-auto"
-            priority
-          />
+        <div className="relative overflow-hidden rounded-lg sm:rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 group">
+          <iframe className="w-full aspect-video" src="https://www.youtube.com/embed/4WVz3zGJ7c8?si=U17GDvlBEafS8jNq" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
         </div>
       </div>

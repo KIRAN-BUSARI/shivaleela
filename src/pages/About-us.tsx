@@ -60,7 +60,7 @@ const About = () => {
   return (
     <div
       id="about-us"
-      className="mx-auto flex flex-col max-w-7xl px-4 sm:px-6 lg:px-8 sm:py-20 md:py-24 lg:py-10"
+      className="mx-auto flex flex-col max-w-7xl px-4 sm:px-6 py-10 lg:px-8 sm:py-20 md:py-24 lg:py-10"
     >
       {/* Header Section */}
       <div
@@ -85,8 +85,8 @@ const About = () => {
           : "opacity-0 -translate-x-8"
           }`}
       >
-        <div className="w-full sm:w-auto lg:w-auto justify-start lg:justify-start flex">
-          <div className="relative group ">
+        <div className="w-full sm:w-auto lg:w-auto justify-center lg:justify-start flex">
+          <div className="relative group">
             <Image
               src={Shantala}
               alt="Guru Shantala"
@@ -99,8 +99,8 @@ const About = () => {
         </div>
 
         <div className="w-full lg:flex-1 space-y-4 sm:space-y-5 md:space-y-6 flex flex-col justify-center">
-          <div className="mb-2 sm:mb-3 md:mb-4">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2">
+          <div className="mb-2 sm:mb-3 md:mb-4 text-center md:text-left">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold  text-gray-900 mb-2">
               Kum. MS Shantala - Star of Silver Screen & Stage
             </h2>
             <p className="text-sm md:text-base font-semibold text-gray-600 italic">
@@ -122,12 +122,12 @@ const About = () => {
       {/* Guru Parimila Section */}
       <div
         ref={section2Ref}
-        className={`flex gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center transition-all duration-700 ease-out ${isSection2Visible
+        className={`flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center mb-20 sm:mb-24 md:mb-28 lg:mb-12 transition-all duration-700 ease-out ${isSection1Visible
           ? "opacity-100 translate-x-0"
-          : "opacity-0 translate-x-8"
+          : "opacity-0 -translate-x-8"
           }`}
       >
-        <div className="w-full sm:w-auto lg:w-auto flex justify-start">
+        <div className="w-full sm:w-auto lg:w-auto flex justify-center md:justify-start">
           <div className="relative group">
             <Image
               src={Parimila}
@@ -141,7 +141,7 @@ const About = () => {
         </div>
 
         <div className="w-full lg:flex-1 space-y-4 sm:space-y-5 md:space-y-6 flex flex-col justify-center">
-          <div className="mb-2 sm:mb-3 md:mb-4">
+          <div className="mb-2 sm:mb-3 md:mb-4 text-center md:text-left">
             <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2">
               Kum. Parimala Subodh
             </h2>

@@ -193,7 +193,7 @@ const Navbar = () => {
         className={`sticky top-0 z-50 h-28 w-full border-b border-gray-50/20 bg-white shadow-xl backdrop-blur-md transition-all duration-300 will-change-transform ${hidden ? 'pointer-events-none -translate-y-28 opacity-0' : 'translate-y-0 opacity-100'}`}
       >
         <div className="flex h-full items-center justify-between px-4 md:px-8">
-          <div className="flex items-center text-xl ml-14 font-bold text-secondary md:text-2xl">
+          <div className="flex items-center text-xl md:ml-14 font-bold text-secondary md:text-2xl">
             <Link
               href={'/'}
               className="flex items-center space-x-2"
@@ -296,9 +296,9 @@ const Navbar = () => {
             aria-label="Toggle mobile menu"
           >
             {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
+              <X className="size-8" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="size-8" />
             )}
           </button>
         </div>
@@ -306,7 +306,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 backdrop-blur-lg transition-all duration-300 md:hidden ${mobileMenuOpen
+        className={`fixed inset-0 z-40 bg-black transition-all duration-300 md:hidden ${mobileMenuOpen
           ? 'pointer-events-auto opacity-100'
           : 'pointer-events-none opacity-0'
           }`}

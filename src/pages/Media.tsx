@@ -247,7 +247,7 @@ function Media() {
             />
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 w-full">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 w-full">
             {!showPlaceholders &&
               images.map((url, i) => (
                 <MediaCard

@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning >
       <body
-        className={`${lato.variable} antialiased`}
+        className={`${lato.variable} antialiased overflow-hidden`}
       >
         {process.env.NODE_ENV === "production" && <Analytics />}
         {children}

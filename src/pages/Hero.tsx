@@ -12,14 +12,19 @@ import imgUrl5 from '@/assets/hero/img5.png';
 import imgUrl6 from '@/assets/hero/img6.png';
 import imgUrl7 from '@/assets/hero/img7.png';
 
+import mImg0 from "@/assets/hero/mobile/img0.png"
+import mImg1 from "@/assets/hero/mobile/img1.png"
+import mImg2 from "@/assets/hero/mobile/img2.png"
+import mImg3 from "@/assets/hero/mobile/img3.png"
+import mImg4 from "@/assets/hero/mobile/img4.png"
+import { Button } from "@/components/ui/button";
 
 const images: StaticImageData[] = [imgUrl0, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5, imgUrl6, imgUrl7];
-const mobileImages: StaticImageData[] = [imgUrl0, imgUrl1, imgUrl2, imgUrl3];
-
+const mobileImages: StaticImageData[] = [mImg0, mImg1, mImg2, mImg3, mImg4];
 
 export default function Hero() {
   return (
-    <section aria-label="Hero Section" className="flex flex-col w-full min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-100px)]">
+    <section aria-label="Hero Section" className="flex flex-col w-full min-h-[calc(20vh-100px)] md:min-h-[calc(100vh-100px)]">
       {/* Top Carousel Section */}
       <div className="relative w-full overflow-hidden hidden md:block md:h-[350px] shrink-0">
         <HeroSectionBgCarousel
@@ -29,16 +34,24 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative w-full overflow-hidden flex md:hidden h-[250px] sm:h-[300px] shrink-0">
+      {/* <div className="relative w-full overflow-hidden flex md:hidden h-[250px] sm:h-[300px] shrink-0">
         <HeroSectionBgCarousel
           images={mobileImages}
           interval={2000}
           className="h-full w-full"
         />
+      </div> */}
+
+      <div className="mt-4 flex md:hidden px-4">
+        <HeroSectionBgCarousel
+          images={mobileImages}
+          interval={2000}
+          className="relative h-[400px] rounded-2xl shadow-xl"
+        />
       </div>
       {/* Bottom Content Section */}
-      <div className="mx-auto flex w-full grow flex-col items-center justify-center bg-white px-4 py-8 md:py-10 lg:py-12 text-center">
-        <h1 className=" text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium tracking-tight text-gray-900">
+      <div className="mx-auto mt-8 md:mt-0 flex w-full grow flex-col items-center justify-center bg-white px-4 md:py-10 lg:py-12 text-center">
+        <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-medium tracking-tight text-gray-900">
           Shivaleela Cultural Trust <br /> <span className="text-primary">Igniting Souls Through Dance</span>
         </h1>
         <p className="my-6 max-w-3xl text-sm md:text-base text-gray-700">
@@ -48,17 +61,19 @@ export default function Hero() {
           </span>{' '}
           captivating stories in Bharatanatyam and beyond. Join the dance & Musical celebrations!
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="rounded-md bg-secondary px-6 md:px-8 py-2.5 md:py-3 text-xs md:text-sm font-semibold text-secondary-foreground transition-colors hover:bg-secondary/90 shadow-md uppercase">
+        <div className="flex flex-col w-full md:w-auto sm:flex-row items-center justify-center gap-4">
+          <Button className="w-full py-6" variant={'default'}>
             Enroll Classes
-          </button>
-          <button className="rounded-md border-2 border-secondary bg-transparent px-6 md:px-8 py-2.5 md:py-3 text-xs md:text-sm font-semibold text-secondary transition-colors hover:bg-secondary hover:text-secondary-foreground shadow-sm uppercase">
+          </Button>
+          <Button className="w-full py-6" variant={'outline'}>
             Book a Performance
-          </button>
+          </Button>
         </div>
       </div>
-      <div className="bg-black py-10 flex items-center justify-center text-center text-white h-10">
-        Welcome to the <span className="text-yellow-400">Kalaatatpha</span> - 2025 kannada dance drama production! Join us on 14th & 28th to celebrate! <span className="text-yellow-400">Click here for Tickets.</span>
+      <div className="bg-black text-white h-10 py-10 hidden md:flex items-center justify-center text-sm md:text-base">
+        <p className="">
+          Welcome to the &nbsp;<span className="text-yellow-400">Kalaatatpha - 2025</span>&nbsp;kannada dance drama production! Join us on 14th & 28th to celebrate!&nbsp; <span className="text-yellow-400">Click here for Tickets.</span>
+        </p>
       </div>
     </section>
   );

@@ -1,11 +1,11 @@
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import Aboutus from "../components/About-us";
-import Statssection from "../components/Statssection";
-import PerformingTeam from "../components/PerformingTeam";
-import Production from "../components/Production";
-import Media from "../components/Media";
-import Footer from "../components/Footer";
+import Hero from "@/pages/Hero";
+import Navbar from "@/components/Navbar";
+import Aboutus from "@/pages/About-us";
+import Statssection from "@/pages/Statssection";
+import PerformingTeam from "@/pages/PerformingTeam";
+import Production from "@/pages/Production";
+import Media from "@/pages/Media";
+import Footer from "@/components/Footer";
 import SectionSeparator from "@/components/SectionSeparator";
 
 function page() {
@@ -15,6 +15,7 @@ function page() {
       <Hero />
       <SectionSeparator title="Rhythms of Heritage" subtitle="Where Dance Awakens Souls" id="about-us" />
       <Aboutus />
+      <SectionSeparator title="Abhyaasa: The Sacred Practice" subtitle="Mastery for Every Soul" id="" />
       <Statssection />
       <PerformingTeam />
       <Production />

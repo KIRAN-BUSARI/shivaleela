@@ -4,7 +4,7 @@ import Image from "next/image";
 import Shantala from "@/assets/Shantala.png";
 import Parimila from "@/assets/Parimila.png";
 import { useEffect, useRef, useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);

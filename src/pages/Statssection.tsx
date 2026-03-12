@@ -128,59 +128,6 @@ function Statssection() {
         </div>
       </div>
 
-      {/* Classes Section */}
-      <div
-        ref={classesRef}
-        className={`flex flex-col space-y-6 sm:space-y-7 md:space-y-8 transition-all duration-700 ease-out ${isClassesVisible
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-8"
-          }`}
-      >
-        <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
-          Abhyasa - Kathak & Bharathantyam Classes
-        </span>
-        <p className="leading-relaxed sm:leading-loose text-base sm:text-lg text-gray-700">
-          Abhyasa offers professional Kathak and Bharatanatyam classes led by
-          Shivaleela Cultural Trust&apos;s expert artists in Bengaluru. Train in authentic
-          techniques with over 12 years of troupe excellence behind every step.
-          Beginners aged 8+ welcome—master mudras, tatkar, and abhinaya in
-          small, supportive batches. Weekly sessions blend classical precision
-          with innovative choreography from acclaimed productions like
-          Punyakoti. First class free to experience our immersive environment.
-          Build confidence, grace, and cultural depth while preparing for stage
-          performances. Flexible timings suit students and professionals. Enroll
-          today—spaces limited.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 w-full">
-          <div className="space-y-3 sm:space-y-4 group">
-            <div className="overflow-hidden rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
-              <Image
-                src={Kathak}
-                alt="Kathak"
-                className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
-                priority
-              />
-            </div>
-            <span className="block font-medium text-sm sm:text-base text-gray-800">
-              Kathak Advanced - Intermediate Beginners level
-            </span>
-          </div>
-          <div className="space-y-3 sm:space-y-4 group">
-            <div className="overflow-hidden rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
-              <Image
-                src={Kathak}
-                alt="Bharathanatyam"
-                className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
-                priority
-              />
-            </div>
-            <span className="block font-medium text-sm sm:text-base text-gray-800">
-              Bharathanatyam Advanced - Intermediate Beginners level
-            </span>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

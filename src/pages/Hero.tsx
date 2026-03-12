@@ -1,6 +1,6 @@
 "use client";
 
-import HeroSectionBgCarousel from "./heroSectionBgCarousal";
+import HeroSectionBgCarousel from "@/components/heroSectionBgCarousal";
 import type { StaticImageData } from 'next/image';
 
 import imgUrl0 from '@/assets/hero/img0.png';
@@ -19,25 +19,25 @@ const mobileImages: StaticImageData[] = [imgUrl0, imgUrl1, imgUrl2, imgUrl3];
 
 export default function Hero() {
   return (
-    <section aria-label="Hero Section" className="flex flex-col w-full h-[calc(100vh-80px)] md:h-[calc(90vh-100px)] ">
+    <section aria-label="Hero Section" className="flex flex-col w-full min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-100px)]">
       {/* Top Carousel Section */}
-      <div className="relative w-full grow overflow-hidden hidden md:block">
+      <div className="relative w-full overflow-hidden hidden md:block md:h-[350px] shrink-0">
         <HeroSectionBgCarousel
           images={images}
           interval={4000}
-          className="h-full! w-full object-cover"
+          className="h-full w-full"
         />
       </div>
 
-      <div className="relative w-full grow overflow-hidden flex md:hidden">
+      <div className="relative w-full overflow-hidden flex md:hidden h-[250px] sm:h-[300px] shrink-0">
         <HeroSectionBgCarousel
           images={mobileImages}
           interval={2000}
-          className="h-full! w-full object-cover"
+          className="h-full w-full"
         />
       </div>
       {/* Bottom Content Section */}
-      <div className="mx-auto flex w-full shrink-0 flex-col items-center justify-center bg-white px-4 py-8 md:py-10 lg:py-12 text-center">
+      <div className="mx-auto flex w-full grow flex-col items-center justify-center bg-white px-4 py-8 md:py-10 lg:py-12 text-center">
         <h1 className="mb-3 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium tracking-tight text-gray-900">
           Shivaleela Cultural Trust Igniting Souls Through Dance
         </h1>

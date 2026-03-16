@@ -1,13 +1,15 @@
-import Hero from "@/pages/Hero";
+import Hero from "@/components/pages/Hero";
 import Navbar from "@/components/Navbar";
-import Aboutus from "@/pages/About-us";
-import Statssection from "@/pages/Statssection";
-import Production from "@/pages/Production";
-import Media from "@/pages/Media";
+import Aboutus from "@/components/pages/About-us";
+import StatsSection from "@/components/pages/StatsSection";
+import Production from "@/components/pages/Production";
+import Media from "@/components/pages/Media";
 import Footer from "@/components/Footer";
 import SectionSeparator from "@/components/SectionSeparator";
-import Classes from "@/pages/Classes";
-import Gallery from "@/pages/Gallery";
+import Classes from "@/components/pages/Classes";
+import Gallery from "@/components/pages/Gallery";
+import FAQ from "@/components/pages/FAQ";
+import Contact from "@/components/pages/Contact";
 
 function page() {
   return (
@@ -16,16 +18,20 @@ function page() {
       <Hero />
       <SectionSeparator title="Rhythms of Heritage" subtitle="Where Dance Awakens Souls" id="about-us" />
       <Aboutus />
-      <SectionSeparator title="Abhyaasa: The Sacred Practice" subtitle="Mastery for Every Soul" id="classes" />
+      <SectionSeparator title="Abhyaasa: Our Classes" subtitle="Mastery for Every Soul" id="classes" />
       <Classes />
       <SectionSeparator title="Productions" subtitle="Timeless Tales in Motion" id="productions" />
       <Production />
       <SectionSeparator title="Numbers That Shows What we Are!" subtitle="Transformative Journeys Through Dance" id="case-studies" />
-      <Statssection />
+      <StatsSection />
       <SectionSeparator title="Gallery of Expression" subtitle="Masters of Movement and Expression" id="gallery" />
       <Gallery />
       <SectionSeparator title="Media" subtitle="Echoes of Applause: Our Dance in the Spotlight" id="media" />
       <Media />
+      <SectionSeparator title="FAQs" subtitle="Your Questions, Our Answers: Everything You Want to Know" id="faq" />
+      <FAQ />
+      <SectionSeparator title="Connect With Us" subtitle="Join the Dance of Connection: Follow Us on Social Media" id="contact" />
+      <Contact />
       <Footer />
     </div>
   );

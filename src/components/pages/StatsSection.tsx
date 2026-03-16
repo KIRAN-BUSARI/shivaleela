@@ -4,7 +4,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 
-function Statssection() {
+function StatsSection() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   const [isStatsVisible, setIsStatsVisible] = useState(false);
   const [isDescVisible, setIsDescVisible] = useState(false);
@@ -88,7 +88,7 @@ function Statssection() {
       {/* Description */}
       <div
         ref={descRef}
-        className={`text-gray-700 leading-relaxed sm:leading-loose font-medium text-base sm:text-lg transition-all duration-700 ease-out ${isDescVisible
+        className={`text-gray-700 text-sm sm:text-base transition-all duration-700 ease-out ${isDescVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-8"
           }`}
@@ -120,4 +120,4 @@ function Statssection() {
   );
 }
 
-export default Statssection;
+export default StatsSection;

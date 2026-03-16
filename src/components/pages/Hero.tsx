@@ -1,5 +1,13 @@
 "use client";
 
+import { Playfair } from "next/font/google";
+
+const playfair = Playfair({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-playfair",
+  subsets: ["latin"],
+});
+
 import HeroSectionBgCarousel from "@/components/heroSectionBgCarousal";
 import type { StaticImageData } from 'next/image';
 
@@ -24,9 +32,9 @@ const mobileImages: StaticImageData[] = [mImg0, mImg1, mImg2, mImg3, mImg4];
 
 export default function Hero() {
   return (
-    <section aria-label="Hero Section" className="flex flex-col w-full min-h-[calc(20vh-100px)] md:min-h-[calc(100vh-100px)]">
+    <section aria-label="Hero Section" className="flex mt-24 flex-col w-full min-h-[calc(20vh-100px)] md:min-h-[calc(100vh-100px)]">
       {/* Top Carousel Section */}
-      <div className="relative w-full overflow-hidden hidden md:block md:h-[350px] shrink-0">
+      <div className="relative w-full overflow-hidden hidden md:block md:h-[400px] shrink-0">
         <HeroSectionBgCarousel
           images={images}
           interval={4000}
@@ -51,7 +59,7 @@ export default function Hero() {
       </div>
       {/* Bottom Content Section */}
       <div className="mx-auto mt-8 md:mt-0 flex w-full grow flex-col items-center justify-center bg-white px-4 md:py-10 lg:py-12 text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-medium tracking-tight text-gray-900">
+        <h1 style={{ fontFamily: playfair.style.fontFamily }} className="text-3xl md:text-4xl lg:text-4xl xl:text-6xl font-bold tracking-tight text-gray-900">
           Shivaleela Cultural Trust <br /> <span className="text-primary">Igniting Souls Through Dance</span>
         </h1>
         <p className="my-6 max-w-3xl text-sm md:text-base text-gray-700">
@@ -62,15 +70,15 @@ export default function Hero() {
           captivating stories in Bharatanatyam and beyond. Join the dance & Musical celebrations!
         </p>
         <div className="flex flex-col w-full md:w-auto sm:flex-row items-center justify-center gap-4">
-          <Button className="w-full py-6" variant={'default'}>
+          <Button className="w-full py-6 font-bold text-base" variant={'default'} size={'sm'}>
             Enroll Classes
           </Button>
-          <Button className="w-full py-6" variant={'outline'}>
+          <Button className="w-full py-6 font-bold text-base" variant={'outline'}>
             Book a Performance
           </Button>
         </div>
       </div>
-      <div className="bg-black text-white h-10 py-10 hidden md:flex items-center justify-center text-sm md:text-base">
+      <div className="bg-black text-white h-10 mt-4 py-10 hidden md:flex items-center justify-center text-sm md:text-base">
         <p className="">
           Welcome to the &nbsp;<span className="text-yellow-400">Kalaatatpha - 2025</span>&nbsp;kannada dance drama production! Join us on 14th & 28th to celebrate!&nbsp; <span className="text-yellow-400">Click here for Tickets.</span>
         </p>

@@ -190,7 +190,7 @@ const Navbar = () => {
   return (
     <nav aria-label="Primary navigation">
       <div
-        className={`sticky top-0 z-50 h-28 w-full border-b border-gray-50/20 bg-white shadow-xl backdrop-blur-md transition-all duration-300 will-change-transform ${hidden ? 'pointer-events-none -translate-y-28 opacity-0' : 'translate-y-0 opacity-100'}`}
+        className={`fixed top-0 z-50 h-24 w-full border-b border-gray-50/20 bg-white shadow-xl backdrop-blur-md transition-all duration-300 will-change-transform ${hidden ? 'pointer-events-none -translate-y-28 opacity-0' : 'translate-y-0 opacity-100'}`}
       >
         <div className="flex h-full items-center justify-between px-4 md:px-8">
           <div className="flex items-center text-xl md:ml-14 font-bold text-secondary md:text-2xl">
@@ -212,8 +212,9 @@ const Navbar = () => {
               <Image
                 src={'/logo.png'}
                 quality={100}
+                className='w-1/2'
                 alt="logo"
-                width={80}
+                width={100}
                 height={100}
               />
             </Link>
@@ -296,9 +297,9 @@ const Navbar = () => {
             aria-label="Toggle mobile menu"
           >
             {mobileMenuOpen ? (
-              <X className="size-8" />
+              <X className="size-6" />
             ) : (
-              <Menu className="size-8" />
+              <Menu className="size-6" />
             )}
           </button>
         </div>

@@ -1,9 +1,9 @@
 "use client";
 
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import { FaFacebook, FaInstagram } from "react-icons/fa6";
 
 function Footer() {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,10 +31,8 @@ function Footer() {
   }, []);
 
   const socialLinks = [
-    { Icon: Instagram, label: "Instagram", link: "https://www.instagram.com/shivaleelanatyalaya/" },
-    { Icon: Twitter, label: "Twitter", link: "https://twitter.com/shivaleelanatyalaya" },
-    { Icon: Linkedin, label: "LinkedIn", link: "https://www.linkedin.com/company/shivaleela-cultural-trust" },
-    { Icon: Facebook, label: "Facebook", link: "https://www.facebook.com/shivaleelanatyalaya" },
+    { Icon: FaInstagram, label: "Instagram", link: "https://www.instagram.com/shivaleelanatyalaya/" },
+    { Icon: FaFacebook, label: "Facebook", link: "https://www.facebook.com/shivaleelanatyalaya" },
   ];
 
   return (
@@ -47,26 +45,18 @@ function Footer() {
         className={`w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 px-4 sm:px-6 md:px-8 lg:px-12 gap-8 sm:gap-10 transition-all duration-700 ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
       >
-        <div className="lg:col-span-1 flex justify-center items-start ">
+        <div className="lg:col-span-1 justify-center items-start hidden md:flex">
           <Image src={"/logo.png"} alt="logo" width={100} height={100} className="object-cover" />
         </div>
 
-        <div className="lg:col-span-2">
-          <span className="text-primary font-semibold text-xl sm:text-2xl block mb-3 sm:mb-4">
-            Shivaleela Cultural Trust
-          </span>
-          <ul className="space-y-1 text-sm sm:text-base text-gray-300">
-            <li>Tharangini Raktheshwari,</li>
-            <li>Nagar Kottara Chowki, Mangaluru,</li>
-            <li>Karnataka - 575006</li>
-            <li className="font-semibold pt-2 text-white hover:text-primary transition-colors cursor-pointer">
-              +91 1234567890
-            </li>
-            <li className="hover:text-primary transition-colors cursor-pointer">
-              shivaleelaculturaltrust@gmail.com
-            </li>
-          </ul>
+        <div className="lg:col-span-2 flex justify-between">
+          Ashirwad <br />
+          # 814, 100 feet Outer ring road, <br /> Kalidasa nagar, Hosakerehalli,<br /> Bsk 3rd stage, Bangalore : 560085.
+          <div className="lg:col-span-1 justify-center items-start md:hidden flex">
+            <Image src={"/logo.png"} alt="logo" width={100} height={100} className="object-cover" />
+          </div>
         </div>
+
 
         <div className="lg:col-span-3 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
           <div>
@@ -148,11 +138,10 @@ function Footer() {
             Design and developed by <Link href={"https://pixelcrew.in/"} target="_blank"> <span className="text-primary font-semibold">pixelcrew</span></Link>
           </p>
         </div>
-        <div className="flex gap-4 sm:gap-6 text-primary">
+        <div className="flex gap-4 sm:gap-6 text-white/50">
           {socialLinks.map(({ Icon, label, link }, index) => (
             <Link key={index} href={link} target="_blank" rel="noopener noreferrer">
               <Icon
-                key={label}
                 className="w-5 h-5 sm:w-6 sm:h-6 cursor-pointer hover:text-white hover:scale-110 transition-all duration-300"
                 aria-label={label}
                 style={{

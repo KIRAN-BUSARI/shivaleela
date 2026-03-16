@@ -27,7 +27,7 @@ const productions = [
   {
     id: 4,
     title: "Ramachacranam & Harikatha",
-    year: "Year TBA",
+    year: "Year 2018",
     description: "Honors Rama's epic journey and sacred storytelling.",
     credits: "Featuring Vidwan Arur Anant Krishnan Sharma.",
   },

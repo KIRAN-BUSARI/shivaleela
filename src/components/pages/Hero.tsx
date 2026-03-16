@@ -31,6 +31,7 @@ import mImg7 from "@/assets/hero/mobile/img7.png"
 import mImg8 from "@/assets/hero/mobile/img8.png"
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const images: StaticImageData[] = [imgUrl0, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5, imgUrl6, imgUrl7];
 const mobileImages: StaticImageData[] = [mImg0, mImg1, mImg2, mImg3, mImg4, mImg5, mImg6, mImg7, mImg8];
@@ -75,9 +76,11 @@ export default function Hero() {
           captivating stories in Bharatanatyam and beyond. Join the dance & Musical celebrations!
         </p>
         <div className="flex flex-col w-full md:max-w-md sm:flex-row items-center justify-center gap-4">
-          <Button className="w-full py-6 font-bold text-base" variant={'default'}>
-            Enroll Classes
-          </Button>
+          <Link href="/#classes" className="w-full">
+            <Button className="w-full py-6 font-bold text-base" variant={'default'}>
+              Enroll Classes
+            </Button>
+          </Link>
         </div>
       </div>
       <div className="bg-black text-white h-10 mt-4 py-10 hidden md:flex items-center justify-center text-sm md:text-base">

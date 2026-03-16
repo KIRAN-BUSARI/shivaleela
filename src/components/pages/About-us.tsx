@@ -68,7 +68,7 @@ const About = () => {
   return (
     <div
       id="about-us"
-      className="mx-auto flex flex-col max-w-7xl px-4 sm:px-6 lg:px-8 sm:py-20 md:py-24 lg:py-10"
+      className="mx-auto flex flex-col max-w-7xl px-4 sm:px-6 lg:px-8 sm:py-20 md:py-24 lg:py-10 py-8"
     >
       {/* Header Section */}
       <div
@@ -78,7 +78,7 @@ const About = () => {
           : "opacity-0 translate-y-8"
           }`}
       >
-        <p className="text-base sm:text-lg md:text-base text-justify text-gray-700 leading-relaxed max-w-full">
+        <p className="text-gray-700 text-sm md:text-base text-balance">
           Founded by visionary <span className="font-bold">Kum. M.S. Shantala</span> President and master guru—Shivaleela Natyalaya began as Bengaluru&apos;s sanctuary for Bharatanatyam and Indian classical arts. Evolving into Shivaleela Cultural Trust in 2014, we educate children in dance, music, and culture—prioritizing those who can&apos;t afford it. Non-commercial at heart, we nurture raw talent, stage captivating performances, and partner with event organizers, artists, and communities. From affordable Bharatanatyam classes to inclusive workshops, our passion creates cultural bridges.
         </p>
         <p>

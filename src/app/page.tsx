@@ -18,7 +18,7 @@ function page() {
       <Hero />
       <SectionSeparator title="Shivaleela Natyalaya: Our Story" subtitle="Preserving Culture Through Dance & Music Since 2013" id="about-us" />
       <Aboutus />
-      <SectionSeparator title="Numbers That Shows What we Are!" subtitle="Transformative Journeys Through Dance" id="case-studies" />
+      <SectionSeparator title="Numbers That Shows What we Are!" className="-mt-18 md:-mt-0" subtitle="Transformative Journeys Through Dance" id="case-studies" />
       <StatsSection />
       <SectionSeparator title="Abhyaasa: Dance & Music Classes" subtitle="Learn Bharatanatyam, Kathak, Hindustani & Carnatic Music" id="classes" />
       <Classes />

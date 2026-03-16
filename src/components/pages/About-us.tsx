@@ -5,6 +5,14 @@ import Shantala from "@/assets/Shantala.png";
 import Parimila from "@/assets/Parimila.png";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Playfair } from "next/font/google";
+
+const playfair = Playfair({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-playfair",
+  subsets: ["latin"],
+});
+
 
 const About = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
@@ -100,7 +108,7 @@ const About = () => {
 
         <div className="w-full lg:flex-1 space-y-4 sm:space-y-5 md:space-y-6 flex flex-col justify-center">
           <div className="mb-2 sm:mb-3 md:mb-4 text-center md:text-left">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold  text-gray-900 mb-2">
+            <h2 style={{ fontFamily: playfair.style.fontFamily }} className="text-lg sm:text-xl md:text-2xl font-bold  text-gray-900 mb-2">
               Kum. MS Shantala
             </h2>
             <p className="text-sm md:text-base font-semibold text-gray-600 italic">
@@ -142,7 +150,7 @@ const About = () => {
 
         <div className="w-full lg:flex-1 space-y-4 sm:space-y-5 md:space-y-6 flex flex-col justify-center">
           <div className="mb-2 sm:mb-3 md:mb-4 text-center md:text-left">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2">
+            <h2 style={{ fontFamily: playfair.style.fontFamily }} className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2">
               Smt. Parimala Subodh
             </h2>
             <p className="text-sm md:text-base font-semibold text-gray-600 italic">

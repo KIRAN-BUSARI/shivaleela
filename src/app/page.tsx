@@ -30,7 +30,7 @@ function page() {
       <Media />
       <SectionSeparator title="FAQs" subtitle="Your Questions, Our Answers: Everything You Want to Know" id="faq" />
       <FAQ />
-      <SectionSeparator title="Connect With Us" subtitle="Join the Dance of Connection: Follow Us on Social Media" id="contact" />
+      <SectionSeparator title="Connect With Us" subtitle="Join the Dance of Connection: Follow Us on Social Media" id="contact" className="text-center" />
       <Contact />
       <Footer />
     </div>

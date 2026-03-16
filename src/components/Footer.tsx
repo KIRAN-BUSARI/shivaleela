@@ -31,38 +31,12 @@ const socialLinks: SocialLink[] = [
 
 const footerSections: FooterLinkSection[] = [
   {
-    title: "Classes",
+    title: "Quick Links",
     links: [
-      { name: "Bharatanatyam", href: "/#classes" },
-      { name: "Carnatic Music", href: "/#classes" },
-      { name: "Workshops", href: "/#classes" },
-      { name: "Registrations", href: "/#contact" },
-    ],
-  },
-  {
-    title: "Media",
-    links: [
-      { name: "Gallery", href: "/#gallery" },
-      { name: "Videos", href: "/#media" },
-      { name: "Press", href: "/#media" },
-    ],
-  },
-  // {
-  //   title: "Events",
-  //   links: [
-  //     { name: "Upcoming Events", href: "/#productions" },
-  //     { name: "Productions", href: "/#productions" },
-  //     { name: "Past Events", href: "/#gallery" },
-  //     { name: "Festivals", href: "/#media" },
-  //   ],
-  // },
-  {
-    title: "Home",
-    links: [
-      { name: "Founder", href: "/#about-us" },
-      { name: "Achievements", href: "/#case-studies" },
-      { name: "Contact Form", href: "/#contact" },
-      { name: "FAQ", href: "/#faq" },
+      { name: "Home", href: "/" },
+      { name: "Classes", href: "/#classes" },
+      { name: "Productions", href: "/#productions" },
+      { name: "Contact", href: "/#contact" },
     ],
   },
 ];
@@ -75,17 +49,16 @@ const Footer = () => {
     >
       <div className="mx-auto flex flex-col gap-8 md:flex-row md:justify-between">
         {/* Logo and Address Section */}
-        <div className="flex flex-col items-center text-center md:flex-row md:items-start md:gap-5 md:text-left">
+        <div className="flex flex-col items-center text-center justify-center md:flex-row md:items-start md:gap-5 md:text-left">
           <div className="shrink-0">
-            <Image src="/logo.png" alt="Gaana Nritya Academy" width={96} height={96} />
+            <Image src="/logo.png" alt="Gaana Nritya Academy" width={150} height={150} />
           </div>
-          <div>
-            <h3 className="mb-2 text-lg font-semibold text-[#FFD45C]">
-              Shivaleela Natyalaya
+          <div className="flex flex-col mt-4">
+            <h3 className="mb-2 text-lg items-center justify-center font-semibold text-[#FFD45C]">
+              Shivaleela Natyalaya &reg;
             </h3>
             <address className="not-italic">
-              <p className="text-sm md:text-base"><span className="font-semibold">Ashirwad</span>&nbsp;
-                <br />
+              <p className="text-sm md:text-base"><span className="">Ashirwad</span>&nbsp;
                 # 814, 100 feet Outer ring road,<br /> Kalidasa nagar, Hosakerehalli, <br />Bsk 3rd stage, Bangalore : 560085.</p>
             </address>
           </div>
@@ -108,9 +81,10 @@ const Footer = () => {
                   {IconComponent && <IconComponent size={24} />}
                 </a>
               );
-            })}
+            })}page
+            
           </div>
-          <nav className="hidden md:grid md:grid-cols-4 md:gap-x-12">
+          <nav className="hidden md:grid md:grid-cols-1">
             {footerSections.map((section) => (
               <div key={section.title}>
                 <h4 className="mb-3 text-base font-semibold text-[#FFD45C]">

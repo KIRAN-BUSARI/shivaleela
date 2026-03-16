@@ -25,10 +25,15 @@ import mImg1 from "@/assets/hero/mobile/img1.png"
 import mImg2 from "@/assets/hero/mobile/img2.png"
 import mImg3 from "@/assets/hero/mobile/img3.png"
 import mImg4 from "@/assets/hero/mobile/img4.png"
+import mImg5 from "@/assets/hero/mobile/img5.png"
+import mImg6 from "@/assets/hero/mobile/img6.png"
+import mImg7 from "@/assets/hero/mobile/img7.png"
+import mImg8 from "@/assets/hero/mobile/img8.png"
+
 import { Button } from "@/components/ui/button";
 
 const images: StaticImageData[] = [imgUrl0, imgUrl1, imgUrl2, imgUrl3, imgUrl4, imgUrl5, imgUrl6, imgUrl7];
-const mobileImages: StaticImageData[] = [mImg0, mImg1, mImg2, mImg3, mImg4];
+const mobileImages: StaticImageData[] = [mImg0, mImg1, mImg2, mImg3, mImg4, mImg5, mImg6, mImg7, mImg8];
 
 export default function Hero() {
   return (

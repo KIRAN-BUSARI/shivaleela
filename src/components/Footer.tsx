@@ -81,8 +81,8 @@ const Footer = () => {
                   {IconComponent && <IconComponent size={24} />}
                 </a>
               );
-            })}page
-            
+            })}
+
           </div>
           <nav className="hidden md:grid md:grid-cols-1">
             {footerSections.map((section) => (

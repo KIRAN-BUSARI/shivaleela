@@ -85,7 +85,7 @@ const Productions = () => {
       <div className="mt-16 text-center">
         <div className="inline-block relative">
           <div className="absolute inset-0 bg-linear-to-r from-orange-200 via-amber-200 to-orange-200 rounded-full blur opacity-50"></div>
-          <p className="relative text-lg md:text-xl font-medium text-amber-900 bg-amber-50/80 backdrop-blur-sm py-4 px-8 rounded-full border border-amber-200 shadow-sm">
+          <p className="relative text-sm md:text-lg font-medium text-amber-900 bg-amber-50/80 backdrop-blur-sm py-4 px-8 rounded-full border border-amber-200 shadow-sm">
             ✨ More magical productions in the works—stay tuned! ✨
           </p>
         </div>

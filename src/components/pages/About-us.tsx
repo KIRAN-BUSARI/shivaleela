@@ -101,7 +101,7 @@ const About = () => {
         <div className="w-full lg:flex-1 space-y-4 sm:space-y-5 md:space-y-6 flex flex-col justify-center">
           <div className="mb-2 sm:mb-3 md:mb-4 text-center md:text-left">
             <h2 className="text-lg sm:text-xl md:text-2xl font-bold  text-gray-900 mb-2">
-              Kum. MS Shantala - Star of Silver Screen & Stage
+              Kum. MS Shantala
             </h2>
             <p className="text-sm md:text-base font-semibold text-gray-600 italic">
               Founder, President & Master Guru.
@@ -143,7 +143,7 @@ const About = () => {
         <div className="w-full lg:flex-1 space-y-4 sm:space-y-5 md:space-y-6 flex flex-col justify-center">
           <div className="mb-2 sm:mb-3 md:mb-4 text-center md:text-left">
             <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2">
-              Kum. Parimala Subodh
+              Smt. Parimala Subodh
             </h2>
             <p className="text-sm md:text-base font-semibold text-gray-600 italic">
               Artistic Director & Co-Founder.

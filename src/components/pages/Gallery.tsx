@@ -2,12 +2,15 @@
 
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-import Shanthala from "@/assets/Shantala.png";
 import img0 from "@/assets/gallery/img0.png";
 import img1 from "@/assets/gallery/img1.png";
 import img2 from "@/assets/gallery/img2.png";
 import img3 from "@/assets/gallery/img3.png";
 import img4 from "@/assets/gallery/img4.png";
+import img5 from "@/assets/gallery/img5.png";
+import img6 from "@/assets/gallery/img6.png";
+import img7 from "@/assets/gallery/img7.png";
+import img8 from "@/assets/gallery/img8.png";
 
 function Gallery() {
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
@@ -17,7 +20,7 @@ function Gallery() {
   const headerRef = useRef<HTMLDivElement>(null);
   const descRef = useRef<HTMLParagraphElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
-  const images = [img0, img1, img2, img3, img4];
+  const images = [img0, img1, img2, img3, img4, img5, img6, img7,img8];
   useEffect(() => {
     const observerOptions = {
       root: null,
@@ -51,7 +54,7 @@ function Gallery() {
 
   return (
     <div id="events" className="">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+      {/* <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <p
           ref={descRef}
           className={`pt-6 sm:pt-7 md:pt-8 text-sm text-justify md:text-base text-gray-700 transition-all duration-700 ease-out ${isDescVisible
@@ -72,7 +75,7 @@ function Gallery() {
           festival appearances and critical acclaim—build unbreakable trust.
           Meet the faces behind the footwork that captivates rasikas worldwide.
         </p>
-      </div>
+      </div> */}
 
       <div
         ref={gridRef}

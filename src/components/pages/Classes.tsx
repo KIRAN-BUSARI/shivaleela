@@ -39,12 +39,12 @@ const Classes = () => {
   }, []);
 
   const classList = [
-    { title: "Bharatanatyam: Classical expressions.", image: Kathak },
-    { title: "Kathak: Rhythmic storytelling.", image: Kathak },
-    { title: "Hindustani Music: Northern ragas.", image: Kathak },
-    { title: "Carnatic Music: Southern melodies.", image: Kathak },
-    { title: "Yoga: Mind-body balance.", image: Kathak },
-    { title: "Workshops: Guest-led inspirations.", image: Kathak }
+    { title: "Bharatanatyam", image: Kathak },
+    { title: "Kathak", image: Kathak },
+    { title: "Hindustani Music", image: Kathak },
+    { title: "Carnatic Music", image: Kathak },
+    { title: "Yoga", image: Kathak },
+    { title: "Workshops", image: Kathak }
   ];
   return (
     <div className="h-auto mx-auto w-full max-w-7xl px-4  sm:px-6 lg:px-8 py-8">
@@ -54,8 +54,7 @@ const Classes = () => {
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-8"
           }`
-        }
-      >
+        }>
         <p className="font-medium ">Shivaleela Natyalaya offers Bharatanatyam, Kathak, Hindustani & Carnatic music, and Yoga classes for all ages. Build grace, rhythm, and harmony under expert gurus.
           Join our vibrant workshops with renowned guest artists for fusion, choreography, and cultural immersion.
         </p>
@@ -71,7 +70,7 @@ const Classes = () => {
               </div>
               <span className="text-base font-medium text-gray-800">{cls.title}</span>
             </div>
-          ))} 
+          ))}
         </div>
       </div >
     </div >
